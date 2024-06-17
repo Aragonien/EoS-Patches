@@ -3,7 +3,7 @@ This repository contains ASM and C special processes I've written for EoS. Every
 
 # C Special Processes
 The C special processes are designed to be used as part of [c-of-time](https://github.com/SkyTemple/c-of-time/tree/main).
-To patch the special processes, add the the code found into this repository to "special_processes.c" and add the custom symbols to their respective files as well.
+To patch the special processes, add the the code found in this repository to "special_processes.c" and add the custom symbols to their respective files as well.
 
 # ASM Special Processes
 These are designed to be used as every other ASM special process.
