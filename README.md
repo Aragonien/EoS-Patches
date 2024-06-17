@@ -9,4 +9,4 @@ To patch the special processes, add the the code found into this repository to "
 These are designed to be used as every other ASM special process.
 
 # Credits
-Credits go to everyone who worked on and contributed  to [skytemple](https://skytemple.org/), [c-of-time](https://github.com/SkyTemple/c-of-time/tree/main) and [pmdsky-debug](https://github.com/UsernameFodder/pmdsky-debug)
+Credits go to everyone who worked on and contributed  to [SkyTemple](https://skytemple.org/), [c-of-time](https://github.com/SkyTemple/c-of-time/tree/main) and [pmdsky-debug](https://github.com/UsernameFodder/pmdsky-debug)
