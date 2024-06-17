@@ -1,3 +1,6 @@
+//Why am I not using the touchscreen struct?
+//It's because everytime I try, the game just dies and it's driving me nuts so I just abandoned the struct for now.
+//Mabye I'll change it later if I find a way which doesn't end up killing the game.
 extern uint8_t TSXPosLive;
 extern uint8_t TSYPosLive;
 extern uint8_t TSXPosLastMitDrag;
