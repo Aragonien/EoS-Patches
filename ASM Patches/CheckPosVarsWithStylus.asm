@@ -3,7 +3,7 @@
 ; This patch checks if the stylus position is close to positions stored in all indexes of POSITION_X and POSITION_Y when the screen is pressed
 ; No Params
 ; Returns: 255 = Screen not pressed, 128 = Screen pressed, but not close to any values,
-; 0 = Stylus pos close to index 0 of pos vars, 1 = Stylus pos close to index 1 of pos vars, 2 = Stylus pos close to index 1 of pos vars
+; 0 = Stylus pos close to index 0 of pos vars, 1 = Stylus pos close to index 1 of pos vars, 2 = Stylus pos close to index 2 of pos vars
 ; Made by Argonien
 ; ------------------------------------------------------------------------------
 
