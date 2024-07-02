@@ -27,6 +27,7 @@ static int CheckIfTouchscreenValuesAreInABoxAroundPositionVariables(short arg1){
   //Param 1 is used for the Index of the POSITION_X and POSITION_Y Variables you want to write to. For example, if Param1 is 1, then the stylus position values will be written to Index 1 of POSITION_X and POSITION_Y
   //Regarding the Size of the Y value, it appears that the Y value written into POSITION_Y with SavePosition(x); is, for sprites, at the base of the sprite and for objects in the middle of the object
   //So if you are checking for sprites, you should extend the Y Box upwards a bit (like currently) and if you are checking for objects, then the Y Box should have equal lenght in both directions
+  //IMPORTANT! When checking for Actor/Object positions, the camera has to be on the top left (default position), else the Actor/Object positions are outside the max. touchscreen values
   int TSX = TSXPosLive;
   int TSY = TSYPosLive;
   int TSP = TSPressed;

@@ -4,6 +4,7 @@
 ; No Params
 ; Returns: 255 = Screen not pressed, 128 = Screen pressed, but not close to any values,
 ; 0 = Stylus pos close to index 0 of pos vars, 1 = Stylus pos close to index 1 of pos vars, 2 = Stylus pos close to index 2 of pos vars
+; For checking for Actor/Object positions, the camera has to be on the top left (default position), else the Actor/Object positions are outside the max. touchscreen values
 ; Made by Argonien
 ; ------------------------------------------------------------------------------
 

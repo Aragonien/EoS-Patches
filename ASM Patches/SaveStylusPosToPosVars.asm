@@ -3,6 +3,7 @@
 ; Made to be used in combination with CheckPosVarsWithStylus and needs the screen to be pressed when called to work
 ; Param 1: 0-2 (the Index of the POSITION_X and POSITION_Y variables you want to write to)
 ; Returns: 1 while saving the position, 2 as an "exit" value after storing the last position when the screen is being released, 62 if Param 1 is out of the defined range of 0-2
+; For checking for Actor/Object positions, the camera has to be on the top left (default position), else the Actor/Object positions are outside the max. touchscreen values
 ; Made by Argonien
 ; ------------------------------------------------------------------------------
 
