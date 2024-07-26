@@ -1,11 +1,10 @@
+#include <pmdsky.h>
+#include <cot.h>
+#include "extern.h"
+#include "CheckAndSaveStylusPosAroundPosVars.h"
 
-extern uint8_t TSXPosLive;
-extern uint8_t TSYPosLive;
-extern uint8_t TSXPosLastMitDrag;
-extern uint8_t TSYPosLastMitDrag;
-extern uint8_t TSPressed;
 //Made by Argonien
-static int CheckIfTouchscreenIsPressedInDefinedBox(){
+int CheckIfTouchscreenIsPressedInDefinedBox(){
   int TSX = TSXPosLive;
   int TSY = TSYPosLive;
   int TSP = TSPressed;

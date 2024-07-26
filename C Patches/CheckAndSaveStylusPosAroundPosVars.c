@@ -1,15 +1,11 @@
-//Why am I not using the touchscreen struct?
-//It's because everytime I try, the game just dies and it's driving me nuts so I just abandoned the struct for now.
-//Mabye I'll change it later if I find a way which doesn't end up killing the game.
-extern uint8_t TSXPosLive;
-extern uint8_t TSYPosLive;
-extern uint8_t TSXPosLastMitDrag;
-extern uint8_t TSYPosLastMitDrag;
-extern uint8_t TSPressed;
+#include <pmdsky.h>
+#include <cot.h>
+#include "extern.h"
+#include "CheckAndSaveStylusPosAroundPosVars.h"
 
 static void ChangePressBit(){
   //Changes VAR_SIDE06_ROOM for the main function
-  //Has to be placed above the main function!
+  
   int check = LoadScriptVariableValue(NULL, VAR_SIDE06_ROOM);
   if (check == 0){
   SaveScriptVariableValue(NULL, VAR_SIDE06_ROOM, 1);// 1= write, 0 = check
@@ -19,7 +15,7 @@ static void ChangePressBit(){
   }
 }
 //Made by Argonien
-static int CheckIfTouchscreenValuesAreInABoxAroundPositionVariables(short arg1){
+int CheckIfTouchscreenValuesAreInABoxAroundPositionVariables(short arg1){
   //This Special Process Checks if the stylus position is in a 20x40 pixel box around all 3 Indexes of the POSITION_X and POSITION_Y Variables
   //If that process returns a true value, the second part of the process runs, which writes the stylus position values into the POSITION_X and POSITION_Y Variables
   //This second part of the process runs until the touchscreen isn't pressed anymore
