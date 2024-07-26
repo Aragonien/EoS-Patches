@@ -1,7 +1,7 @@
 #include <pmdsky.h>
 #include <cot.h>
 #include "extern.h"
-#include "CheckAndSaveStylusPosAroundPosVars.h"
+#include "CheckTSBox.h"
 
 //Made by Argonien
 int CheckIfTouchscreenIsPressedInDefinedBox(){
