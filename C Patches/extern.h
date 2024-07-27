@@ -9,6 +9,9 @@ extern uint8_t TSXPosLastMitDrag;
 extern uint8_t TSYPosLastMitDrag;
 extern uint8_t TSPressed;
 
-//Used for "CheckAnsSaveStylusAroundPosVars", "StoreCameraPosition"
+//Used for "CheckAnsSaveStylusAroundPosVars", "StoreCameraPosition", "CheckCircleMovementAroundPosVar"
 extern uint16_t KameraXPos;
 extern uint16_t KameraYPos;
+
+//Used by "CheckCircleMovementAroundPosVar", "CheckCircleMovementAroundScreenCenter"
+extern uint16_t KreisCounter;

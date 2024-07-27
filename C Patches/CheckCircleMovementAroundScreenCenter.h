@@ -1,0 +1,1 @@
+int checkCircleScreenCenter (short arg1);

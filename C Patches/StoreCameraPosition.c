@@ -7,6 +7,7 @@
 //Only supports full numbers.
 //Param 1: The Cameras X Position
 //Param 2: The Cameras Y Position
+//If you use multiple patches that use these variables, comment them out in all but one patch. It won't compile otherwise.
 uint16_t KameraXPos;
 uint16_t KameraYPos;
 
@@ -20,7 +21,5 @@ void StoreCameraPosition(short arg1, short arg2){
     if (arg1 > 17 && arg2 > 12){
         KameraXPos = (arg1-17)*8;
         KameraYPos = (arg2-12)*8;
-        SaveScriptVariableValueAtIndex(NULL, VAR_SCENARIO_SUB8, 0, KameraXPos);
-        SaveScriptVariableValueAtIndex(NULL, VAR_SCENARIO_SUB8, 1, KameraYPos);
     }
 }

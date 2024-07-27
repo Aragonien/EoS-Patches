@@ -2,6 +2,9 @@
 #include <cot.h>
 #include "extern.h"
 #include "CheckAndSaveStylusPosAroundPosVars.h"
+//If you use multiple patches that use these variables, comment them out in all but one patch. It won't compile otherwise.
+uint16_t KameraXPos;
+uint16_t KameraYPos;
 
 static void ChangePressBit(){
   int check = LoadScriptVariableValue(NULL, VAR_SIDE06_ROOM);
